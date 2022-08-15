@@ -35,9 +35,7 @@ class LoginFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val btnsignin: Button = view.findViewById(R.id.btn_signin)
-        val etemail: TextView = view.findViewById(R.id.et_name)
-        val etpassword: TextView = view.findViewById(R.id.et_password)
+        val btnsignin: Button = requireView().findViewById(R.id.btn_signin)
         val ModelUser: viewModelUser by viewModels()
 
         btnsignin.setOnClickListener {Logindata()

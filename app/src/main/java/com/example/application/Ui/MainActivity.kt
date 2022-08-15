@@ -2,6 +2,7 @@ package com.example.application.Ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.NavController
 
 import androidx.navigation.fragment.NavHostFragment
 import com.example.application.R
@@ -9,7 +10,10 @@ import com.example.application.R
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        lateinit var controller: NavController
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initView()

@@ -29,9 +29,7 @@ class HomeFragment : Fragment(),ProudctCilck {
     lateinit var layoutManager: GridLayoutManager
     val viewModelProduct:viewModeProduct  by viewModels()
     lateinit var ModelUser:viewModelUser
-    val email:TextView= requireView().findViewById(R.id.et_email)
-    val password:TextView= requireView().findViewById(R.id.et_password)
-    var  buttonsignin:Button= requireView().findViewById(R.id.et_password)
+    var  buttonsignin:Button= requireView().findViewById(R.id.btn_signin)
 
 
     override  fun onCreate(savedInstanceState: Bundle?) {
